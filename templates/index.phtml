@@ -27,9 +27,9 @@
     <body>
         <h1>Slim</h1>
         <div>a microframework for PHP</div>
-
-        <?php if (isset($name)) : ?>
-            <h2>Hello <?= htmlspecialchars($name); ?>!</h2>
+        <?php if (isset($args['name'])) : ?>
+            <h2>Hello <?= htmlspecialchars($args['name']); ?>!</h2>
+            <h2>Hello <?= htmlspecialchars($content); ?>!</h2>
         <?php else: ?>
             <p>Try <a href="/SlimFramework">/SlimFramework</a>
         <?php endif; ?>
